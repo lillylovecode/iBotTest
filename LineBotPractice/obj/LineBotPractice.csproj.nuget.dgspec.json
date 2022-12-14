@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ipass_code\\程式練習\\leetCode\\LineBotPractice\\LineBotPractice\\LineBotPractice.csproj": {}
+    "C:\\ipass_code\\程式練習\\LineBotPractice\\LineBotPractice\\LineBotPractice.csproj": {}
   },
   "projects": {
-    "C:\\ipass_code\\程式練習\\leetCode\\LineBotPractice\\LineBotPractice\\LineBotPractice.csproj": {
+    "C:\\ipass_code\\程式練習\\LineBotPractice\\LineBotPractice\\LineBotPractice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ipass_code\\程式練習\\leetCode\\LineBotPractice\\LineBotPractice\\LineBotPractice.csproj",
+        "projectUniqueName": "C:\\ipass_code\\程式練習\\LineBotPractice\\LineBotPractice\\LineBotPractice.csproj",
         "projectName": "LineBotPractice",
-        "projectPath": "C:\\ipass_code\\程式練習\\leetCode\\LineBotPractice\\LineBotPractice\\LineBotPractice.csproj",
+        "projectPath": "C:\\ipass_code\\程式練習\\LineBotPractice\\LineBotPractice\\LineBotPractice.csproj",
         "packagesPath": "C:\\Users\\003631\\.nuget\\packages\\",
-        "outputPath": "C:\\ipass_code\\程式練習\\leetCode\\LineBotPractice\\LineBotPractice\\obj\\",
+        "outputPath": "C:\\ipass_code\\程式練習\\LineBotPractice\\LineBotPractice\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
