@@ -61,6 +61,6 @@ public class LineBotApp : WebhookApplication
             }
         };
 
-        await _messagingClient.ReplyMessageAsync(ev.ReplyToken,new List<ISendMessage> { flexMessage });
+        await _messagingClient.ReplyMessageAsync(ev.ReplyToken,new List<ISendMessage> { flexMessage }); //ReplyMessageAsync: 傳訊息給使用者
     }
 }
