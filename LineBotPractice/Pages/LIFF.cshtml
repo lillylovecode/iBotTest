@@ -1,0 +1,44 @@
+﻿@page
+@model LineBotPractice.Pages.LIFFModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iBot</title>
+    <link rel="stylesheet" href="@Href("~/liff.css")">
+</head>
+<body>
+    <div>
+        <div id="result"></div>
+    </div>
+
+    <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+    <script src="@Href("~/liff.js")"></script>
+    <script>
+        function initializeLiff(myLiffId) {
+            liff
+                .init({
+                    liffId: myLiffId
+                })
+                .then(() => {
+                    initializeApp();
+                })
+                .catch((err) => {
+                    alert('啟動失敗。'+ err);
+                });
+        }
+
+        function initializeApp() {
+            var h = document.getElementById('result');
+            h.innerHTML = 'Hello!!';
+        }
+
+        //使用 LIFF_ID 初始化 LIFF 應用
+        initializeLiff('1657738058-89BMdkJ6');
+    </script>
+</body>
+</html>
