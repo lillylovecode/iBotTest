@@ -1,9 +1,0 @@
-C:\ipass_code\程式練習\LineBotPractice\LineBotPractice\obj\Release\net6.0\PubTmp\Out\LineBotPractice.exe
-C:\ipass_code\程式練習\LineBotPractice\LineBotPractice\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
-C:\ipass_code\程式練習\LineBotPractice\LineBotPractice\obj\Release\net6.0\PubTmp\Out\appsettings.json
-C:\ipass_code\程式練習\LineBotPractice\LineBotPractice\obj\Release\net6.0\PubTmp\Out\LineBotPractice.dll
-C:\ipass_code\程式練習\LineBotPractice\LineBotPractice\obj\Release\net6.0\PubTmp\Out\LineBotPractice.deps.json
-C:\ipass_code\程式練習\LineBotPractice\LineBotPractice\obj\Release\net6.0\PubTmp\Out\LineBotPractice.runtimeconfig.json
-C:\ipass_code\程式練習\LineBotPractice\LineBotPractice\obj\Release\net6.0\PubTmp\Out\LineBotPractice.pdb
-C:\ipass_code\程式練習\LineBotPractice\LineBotPractice\obj\Release\net6.0\PubTmp\Out\Line.Messaging.dll
-C:\ipass_code\程式練習\LineBotPractice\LineBotPractice\obj\Release\net6.0\PubTmp\Out\Newtonsoft.Json.dll
