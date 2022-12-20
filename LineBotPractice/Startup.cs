@@ -1,37 +1,43 @@
-﻿using LineBotPractice;
+﻿using LineBotPractice.Models;
 
 public class Startup
 {
+    //注入Configuration組態相依性
     public Startup(IConfiguration configuration)
     {
         Configuration = configuration;
     }
 
     public IConfiguration Configuration { get; }
-    // This method gets called by the runtime. Use this method to add services to the container.
-    // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
+    
+    //DI Container相依性注入容器：註冊服務介面與實作相依性
     public void ConfigureServices(IServiceCollection services)
     {
         services.AddSingleton<LineBotConfig, LineBotConfig>((s) => new LineBotConfig
         {
-            channelSecret = Configuration["LineBot:channelSecret"],
-            accessToken = Configuration["LineBot:accessToken"]
+            ChannelSecret = Configuration["LineBot:channelSecret"],
+            AccessToken = Configuration["LineBot:accessToken"]
         });
 
         services.AddHttpContextAccessor();
         services.AddRazorPages();
     }
 
-    // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+    //使用middleware元件：設定HTTP管線使用哪些中介元件的地方
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     {
         if (env.IsDevelopment())
         {
-            app.UseDeveloperExceptionPage();
+            app.UseDeveloperExceptionPage(); //開發者例外頁
         }
+        //else
+        //{
+        //    app.UseExceptionHandler("Home/Error"); //一般例外頁
+        //}
 
-        app.UseRouting();
+        app.UseRouting();//使用路由
 
+        //端點路由
         app.UseEndpoints(endpoints =>
         {
             endpoints.MapControllerRoute(

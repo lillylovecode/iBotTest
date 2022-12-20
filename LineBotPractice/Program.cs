@@ -9,5 +9,13 @@ public class Program
     }
 
     public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-        WebHost.CreateDefaultBuilder(args).UseStartup<Startup>();
+        WebHost.CreateDefaultBuilder(args)
+        .ConfigureLogging(logginBuilder =>
+        {
+            logginBuilder.ClearProviders();
+            logginBuilder.AddConsole();
+            logginBuilder.AddDebug();
+            logginBuilder.AddEventSourceLogger();
+        }) //設定Logging提供者
+        .UseStartup<Startup>();
 }
